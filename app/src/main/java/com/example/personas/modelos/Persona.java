@@ -6,7 +6,7 @@ public class Persona {
     private String nombre;
     private String apellido;
 
-    Persona(String cedula, String nombre, String apellido){
+    public Persona(String cedula, String nombre, String apellido){
         this.setCedula(cedula);
         this.setNombre(nombre);
         this.setApellido(apellido);
@@ -36,7 +36,7 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    void guardar(){
+    public void guardar(){
         Datos.guardar(this);
     }
 

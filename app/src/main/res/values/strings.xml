@@ -12,7 +12,7 @@
     <string name="crear">Crear</string>
 
     <string-array name="opciones">
-         <item>@string/listar_personas</item>
         <item>@string/crear</item>
+        <item>@string/listar_personas</item>
     </string-array>
 </resources>
