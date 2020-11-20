@@ -15,7 +15,9 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/crear_persona"
+        android:textAlignment="center"
+        android:textSize="24sp" />
 
     <EditText
         android:id="@+id/txCedula"
@@ -23,7 +25,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/txCedula"
-        android:inputType="textPersonName" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/txNombre"

@@ -25,16 +25,18 @@ public class CrearPersona extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        String c = this.cedula.getText().toString();
-        String n = this.nombre.getText().toString();
-        String a = this.apellido.getText().toString();
 
-        Persona p = new Persona(c, n, a);
-        p.guardar();
+        if(this.validar()) {
+            String c = this.cedula.getText().toString();
+            String n = this.nombre.getText().toString();
+            String a = this.apellido.getText().toString();
 
-        this.limpiar();
-        Toast.makeText(this, "Persona guardada exitosamente", Toast.LENGTH_LONG);
+            Persona p = new Persona(c, n, a);
+            p.guardar();
 
+            this.limpiar();
+            Toast.makeText(this, "Persona guardada exitosamente", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void limpiar(View v){
@@ -46,5 +48,28 @@ public class CrearPersona extends AppCompatActivity {
         this.nombre.setText("");
         this.apellido.setText("");
         this.cedula.requestFocus();
+    }
+
+    public boolean validar(){
+
+        if(this.cedula.getText().toString().isEmpty()){
+            this.cedula.setError( getString(R.string.error_numero) );
+            this.cedula.requestFocus();
+            return false;
+        }
+
+        if(this.nombre.getText().toString().isEmpty()){
+            this.nombre.setError( getString(R.string.error_numero) );
+            this.nombre.requestFocus();
+            return false;
+        }
+
+        if(this.apellido.getText().toString().isEmpty()){
+            this.apellido.setError( getString(R.string.error_numero) );
+            this.apellido.requestFocus();
+            return false;
+        }
+
+        return true;
     }
 }

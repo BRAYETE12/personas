@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         lista =  findViewById(R.id.listado);
 
         list = getResources().getStringArray(R.array.opciones);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, list);
         lista.setAdapter(adapter);
 
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {

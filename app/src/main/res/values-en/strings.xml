@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personas</string>
+    <string name="numero">N°</string>
+    <string name="txApellido">Lasname</string>
+    <string name="txNombre">Name</string>
+    <string name="txCedula">DNI</string>
+    <string name="listar">List</string>
+    <string name="limpiar">Clear</string>
+    <string name="guardar">Save</string>
+    <string name="listar_personas">Person List</string>
+    <string name="crear_persona">New Personon</string>
+    <string name="crear">Create</string>
+    <string name="error_numero">" The field is required"</string>
+</resources>

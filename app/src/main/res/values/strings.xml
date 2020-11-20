@@ -10,9 +10,12 @@
     <string name="numero">N°</string>
     <string name="listar">Listar</string>
     <string name="crear">Crear</string>
+    <string name="crear_persona">Crear Persona</string>
+    <string name="error_numero">El campo es requerido</string>
 
     <string-array name="opciones">
         <item>@string/crear</item>
         <item>@string/listar_personas</item>
     </string-array>
+
 </resources>
